@@ -9,15 +9,14 @@
 </head>
 
 <body>
-    <div id="header">
-      <h1>twenty eyes dot org</h1>
-      <!-- img style="float: right; margin: 0px 0px 5px 5px;" src="images/banner.png"/ -->
-      <%= image_tag 'banner.png', id: 'image_id' %>
-      <%= link_to 'Home', blogs_path %>
-    </div>
-    <div id="wrapper">
-      <%= yield %>
-    </div>
+<%= nav_bar fixed: :top, brand: 'twenty eyes dot org', responsive: true do %>
+    <%= menu_group do %>
+        <%= menu_item 'Home', root_path %>
+        <%= menu_item 'Blog', blogs_path %>
+    <% end %>
+<% end %>
+
+<%= yield %>
 </body>
 
 </html>
