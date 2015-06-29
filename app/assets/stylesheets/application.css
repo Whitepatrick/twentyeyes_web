@@ -1,0 +1,145 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face {
+    font-family: Arial;
+}
+
+body {
+    background-color:#999999;
+    font-family: Arial;
+    color:#333;
+    margin:0;
+    padding:0;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+li {
+    font-family: sans-serif;
+}
+
+a:link {
+    COLOR: #006600;
+}
+
+a:visited {
+    COLOR: #006633;
+}
+
+a:hover {
+    COLOR: #003333;
+}
+
+a:active {
+    COLOR: #00FF00;
+}
+
+
+
+#wrapper {
+    width:90%;
+    background-color:#999999;
+    margin:0 auto;
+    border-left:1px;
+    border-right:1px;
+}
+
+#header {
+    width:90%;
+    height:210px;
+    margin:0 auto;
+    margin-bottom:25px;
+    border-bottom:1px;
+    border-top:1px;
+    text-align: left;
+}
+
+#header h1 {
+    padding:5px;
+}
+
+#image_id {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+#nav {
+
+    width:960px;
+    height:40px;
+    border-bottom:1px solid #ccc;
+    float: left;
+
+}
+
+#nav a {
+    display:inline;
+    padding:10px;
+    text-decoration:underline;
+    background:color:#f1f1f1;
+}
+
+#nav a:hover {
+    background-color:#bababa;
+    height:80px;
+}
+
+#button {
+    width:960px;
+    height:68px;
+    border-bottom:1px solid #ccc;
+    font-family:Arial;
+}
+
+
+#content {
+    width:725px;
+    float:left;
+    padding:10px;
+}
+
+
+
+#sidebar {
+    width:200px;
+    float:right;
+    margin-bottom:25px;
+}
+
+#sidebar a {
+    text-decoration:none;
+}
+
+#sidebar li {
+    list-style:none;
+}
+
+#footer {
+    clear:both;
+    width:960px;
+    height:135px;
+    border-top:1px solid $ccc;
+    border-bottom:1px solid $ccc;
+}
+
+#footer p {
+    padding:10px;
+}
+
+

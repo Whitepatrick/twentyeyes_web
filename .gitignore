@@ -34,7 +34,7 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
-# Ignore IDA crud
+# Ignore IDE crud
 .idea/*.rbc
 capybara-*.html
 .rspec
