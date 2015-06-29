@@ -67,7 +67,7 @@ a:active {
     margin-bottom:25px;
     border-bottom:1px;
     border-top:1px;
-    text-align: left;
+    text-align: right;
 }
 
 #header h1 {
@@ -75,7 +75,7 @@ a:active {
 }
 
 #image_id {
-    float: right;
+    float: left;
     margin: 0 0 15px 15px;
 }
 
