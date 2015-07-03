@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>20 eyes dot org</title>
+  <title>TwentyeyesWeb</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
 <body>
-<%= nav_bar fixed: :top, brand: 'twenty eyes dot org', responsive: true do %>
-    <%= menu_group do %>
-        <%= menu_item 'Home', root_path %>
-        <%= menu_item 'Blog', blogs_path %>
-    <% end %>
-<% end %>
 
 <%= yield %>
-</body>
 
+</body>
 </html>
