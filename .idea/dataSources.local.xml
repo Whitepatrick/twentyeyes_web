@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails twentyeyes_web: development" uuid="7d8d325d-1ad7-47c6-a607-51e75e706e62" />
+    <data-source name="Rails twentyeyes_web: test" uuid="ff47e0b8-8f5e-46cf-9afe-d8f034ff9b48" />
+    <data-source name="Rails twentyeyes_web: production" uuid="9f96393c-4557-4629-ab8f-15b69a19105b" />
+  </component>
+</project>

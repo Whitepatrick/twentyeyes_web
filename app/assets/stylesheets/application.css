@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+@font-face {
+    font-family: Arial;
+}
+
+body {
+    padding-top: 50px;
+    background-color:#999999;
+    font-family: Arial;
+    color:#333;
+    margin:0;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+li {
+    font-family: sans-serif;
+}
+
+a:link {
+    COLOR: #006600;
+}
+
+a:visited {
+    COLOR: #006633;
+}
+
+a:hover {
+    COLOR: #003333;
+}
+
+a:active {
+    COLOR: #00FF00;
+}
