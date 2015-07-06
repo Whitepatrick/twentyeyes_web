@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
-gem 'mongrel'
+gem 'thin'
 gem 'haml'
 
 group :development, :test do
