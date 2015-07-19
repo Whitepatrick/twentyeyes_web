@@ -13,7 +13,9 @@
 %p
   In other news, I made an about me page,
   %a{:href => "/about_me"} check it out!
+%hr
 %h1 PAST:
+%hr
 %h3
   twenty eyes dot org: son of 20eyes!
   %img{:src => "images/frank.png", :style => "float: right; margin: 0px 0px 15px 15px;"}/
@@ -31,6 +33,7 @@
   I've still got some tweaking to do but it's a first step towards making this page a little more
   mobile friendly and visually appealing. I don't have to stomach to go full geocities so I'll just move
   up to the late 2000's B-)
+%hr
 %h3
   I'm moving EVERYTHING!
   %img{:src => "images/ruby_slippers.png", :style => "float: right; margin: 0px 0px 15px 15px;"}/
@@ -48,6 +51,7 @@
   work hours for the time being. I've been slowly getting back in to ruby and working a lot on TDD using
   = succeed "." do
     %a{:href => "https://github.com/test-unit/test-unit", :target => "_blank"} test-unit
+%hr
 %h3
   3/29/2015: Jenkins & I.. R U N I T E D !
   %img{:src => "images/jenkins_patrick.png", :style => "float: right; margin: 0px 0px 15px 15px;"}/
@@ -63,6 +67,7 @@
 %p
   %b SOON:
   I don't want to overload this post, will continue it in a few days!
+%hr
 %h3 2/6/2015: Hound Search 2: Son of hound search, and other updates!
 %p What a week.
 %p
@@ -92,6 +97,7 @@
   already initiates
   a pull on a scheduled basis, rendering that little script I wrote pretty worthless, but fun to write all
   the same!
+%hr
 %h3 2/2/2015: Hound Search!
 %p
   I'm putting up a link to a seach all my GitHub repositories powered by
@@ -99,6 +105,7 @@
     %a{:href => "http://github.com/etsy/hound", :target => "_blank"} Hound
 %p
   %a{:href => "http://hound.20eyes.org", :target => "_blank"} Hound my GitHub!
+%hr
 %h3 12/27/2014: 20eyes upgrade!
 %p
   After reading a ton about
@@ -127,6 +134,7 @@
   I got a new
   = succeed "!" do
     %a{:href => "images/bike.jpg", :target => "_blank"} bike
+%hr
 %h3 11/1/2014: Editor Quest
 %p
   Recently in an effort to get a deeper understanding of Linux I have been teaching
@@ -137,6 +145,7 @@
   would typically give me, I use vim, but I have also been using
   = succeed "." do
     %a{:href => "https://wiki.gnome.org/Apps/Gedit", :target => "_blank"} gedit
+%hr
 %h3 10/24/2014: QA, Ruby, and Linux: A nerds tale
 %img{:alt => "Rundeck", :src => "images/rundeck.png"}/
 %br/
@@ -147,6 +156,7 @@
   %a{:href => "http://rundeck.org/", :target => "_blank"} Rundeck
   up and running to assist in building and rebuilding the various
   QA environments. Trying to tackle this one in my down time at work, but I've made a fair amount of progress. The only thing I have left to do is assign access policies.
+%hr
 %h3 5/29/2014: It's Log!
 %img{:alt => "ELK", :src => "images/elk.png"}/
 %br/
@@ -171,6 +181,7 @@
   A session handler writtin in PHP with MongoDB. During the last semester I wrote a session handler in PHP with MySQL and kind of regretted it. I now get the chance to write one for MongoDB which, in my opnion, should be faster and more felxible.
   %a{:href => "https://github.com/Whitepatrick/session_handler.git", :target => "_blank"} GitHub repo
 %p Stay tuned for future updates and new projects!
+%hr
 %h3 PHP + GridFS = The most fun I've had with MongoDB!
 %img{:alt => "MongoDB", :src => "images/gridfs.png"}/
 %br/
@@ -181,6 +192,7 @@
   %br/
   = succeed "Truly" do
     %br/
+%hr
 %h3 Great Success!
 %p
   After beating my head against the wall trying to get the SSH transfer job to work in Jenkins for a few weeks, the job is finally completing all steps and builds are stable!
@@ -191,6 +203,7 @@
   The journey from the previous errors I was getting and the first stable job was a long and winding one. The job is using the publish over SSH plugin. The build actively polls my GitHub repository frequently throughout the day.
   Whenever Jenkins notices a new push that has been made to the repository it triggers the build. Jenkins gathers all files from the repo and builds them in the workspace. After the build the SSH plugin sends all files on the
   workspace to my production server and then the files are live.
+%hr
 %h3 Hitting some road blocks!
 %p I've been ending up stumped on getting Jenkins to actually transfer the files that have been changed after polling GitHub. I am getting everything else right; Build is successfull, SSH connection made, but then 0 files transfer. Here is output:
 %br/
@@ -205,6 +218,7 @@
   Another issue raised here is that I'm about a week behind schedule. I can try making up the time but next week I need to attempt to stand up
   = succeed "." do
     %a{:href => "http://puppetlabs.com/", :target => "_blank"} Puppet
+%hr
 %h3 Jenkins-CI Installation and configuration
 %a{:href => "http://jenkins-ci.org/", :target => "_blank"}
   %img{:src => "images/jenkins.png"}/
@@ -224,6 +238,7 @@
   which is probably the most important step in the build process BUT at least all other processes are going off without
   a hitch. SSH connection is smooth, Jenkins is connecting to GitHub and getting polling accurately. I'm still not sure if the scheduler
   is working as it should but I can sort that detail out after I start getting consistant successful builds.
+%hr
 %h3 MongoDB + PHP
 %a{:href => "http://docs.mongodb.org/ecosystem/drivers/php/", :target => "_blank"}
   %img{:src => "images/mongophp.png"}/
@@ -239,11 +254,16 @@
   enter username and pw on main page and script enters that info in to
   mongodb collection. Next step is write script to authenticate user after
   information entry
+%hr
 %h3 Back end work
 %p
   Now working on a feature for the site that will allow
   the user to create an account, upload an image, and submit a
   comment with the image. All managed by mongodb, scripted
   with php. It will be a new git branch to be merged after testing.
+%hr
 %h3 Site Creation
-%p Now creating all pages and setting up working links. By the end of tonight (January 24th) I would like to have a bare bones site to accomodate forthcoming content that will document my contiuous deployment project. Very Excited!
+%p Now creating all pages and setting up working links. By the end of tonight
+(January 24th) I would like to have a bare bones site to accomodate
+forthcoming content that will document my contiuous deployment project. Very
+Excited!
