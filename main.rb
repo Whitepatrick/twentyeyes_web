@@ -17,3 +17,7 @@ end
 get '/posts' do
   haml :posts
 end
+
+get '/archive' do
+  haml :archive
+end
