@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'sinatra'
+gem 'sinatra-activerecord'
 gem 'thin'
 gem 'haml'
-
+gem 'rake'
+gem 'pg'
+gem 'activerecord-postgresql-adapter'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'rspec'
