@@ -1,6 +1,6 @@
 #\ -w -p 80
 require 'sinatra'
-require './main'
+require './app'
 
 set :environment, :production
 set :port, 80
