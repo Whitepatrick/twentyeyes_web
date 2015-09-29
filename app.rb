@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
-require_relative '../twentyeyes_api/lib/read'
 
 class Post < ActiveRecord::Base
 end
