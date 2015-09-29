@@ -9,10 +9,6 @@ end
 
 class App < Sinatra::Base
 
-  before do
-    content_type :json
-  end
-
   get '/' do
     haml :posts
   end
@@ -31,15 +27,6 @@ class App < Sinatra::Base
 
   get '/archive' do
     haml :archive
-
-  get '/posts_new/?' do
-    @posts = Post.all
-    @posts.to_json
   end
-
-  get 'post/:post_id/?' do
-    @post = Post.find_by_id(params[:post_id])
-    @post.to_json
-  end
-end
+  
 end
