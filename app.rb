@@ -2,9 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'haml'
 
-class Post < ActiveRecord::Base
-end
-
 class App < Sinatra::Base
 
   get '/' do
