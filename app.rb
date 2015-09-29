@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/activerecord'
 require 'haml'
 require_relative '../twentyeyes_api/lib/read'
 
@@ -28,5 +27,5 @@ class App < Sinatra::Base
   get '/archive' do
     haml :archive
   end
-  
+
 end
