@@ -1,7 +1,12 @@
-require 'rubygems'
 require 'sinatra'
-require 'haml'
+require './lib/twentyeyes'
 
+get '/' do
+  @posts = Post.all(:order => [ :post_id.asc ])
+  erb :posts
+end
+
+=begin
 get '/' do
   haml :posts
 end
@@ -17,3 +22,4 @@ end
 get '/posts' do
   haml :posts
 end
+=end
