@@ -1,9 +1,10 @@
-task :default => [:create_table]
+require './lib/twentyeyes'
+require './spec/insert_test_rows'
+require 'rake'
+require 'rspec/core/rake_task'
 
-task :create_table do
-
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.pattern = Dir.glob('spec/**/*_spec.rb')
+  t.rspec_opts = '--format documentation'
 end
-
-task :insert_posts do
-  #
-end
+task :default => :spec

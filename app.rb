@@ -2,12 +2,12 @@ require 'sinatra'
 require './lib/twentyeyes'
 
 get '/' do
-  @posts = Post.all(:order => [ :post_id.asc ])
+  @posts = Post.all(:order => [ :post_id.desc ])
   haml :posts
 end
 
-=begin
-get '/' do
+get '/posts' do
+  @posts = Post.all(:order => [ :post_id.desc ])
   haml :posts
 end
 
@@ -18,8 +18,3 @@ end
 get '/contact' do
   haml :contact
 end
-
-get '/posts' do
-  haml :posts
-end
-=end

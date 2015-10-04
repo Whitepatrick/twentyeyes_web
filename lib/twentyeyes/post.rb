@@ -11,8 +11,8 @@ class Post
   property :body,            Text,      :required => true
   property :created_at,      DateTime
   property :updated_at,      DateTime
+  property :image_ref,       String,    :length => 1..255
 end
-
 DataMapper.finalize
-#Post.auto_upgrade!
-Post.auto_migrate!
+#Post.auto_migrate!
+#Post.auto_update!

@@ -1,7 +1,8 @@
-
 - @posts.each do |post|
-  %h1 = post.title
-  %p = post.body
+  %h1= post.title
+  %small= post.created_at
+  %img{:src => post.image_ref}
+  %p= post.body
 
 %hr
 %h3

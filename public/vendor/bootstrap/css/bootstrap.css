@@ -102,6 +102,8 @@ sub {
   bottom: -.25em;
 }
 img {
+  float: right;
+  margin: 0px 0px 15px 15px;
   border: 0;
 }
 svg:not(:root) {
