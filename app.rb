@@ -3,7 +3,7 @@ require './lib/twentyeyes'
 
 get '/' do
   @posts = Post.all(:order => [ :post_id.asc ])
-  erb :posts
+  haml :posts
 end
 
 =begin

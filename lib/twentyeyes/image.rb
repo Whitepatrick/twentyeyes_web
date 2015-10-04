@@ -1,4 +1,4 @@
-=begin
+
 require 'data_mapper'
 
 class Post

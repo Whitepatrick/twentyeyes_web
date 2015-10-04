@@ -1,0 +1,8 @@
+
+- @posts.each do |post|
+  %h1 = post.title
+  %p = post.body
+
+%hr
+%h3
+  %a{:href => "/archive"} Older Posts

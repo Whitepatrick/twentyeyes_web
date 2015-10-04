@@ -1,5 +1,8 @@
 %h1
-  CURRENT:
+  - @posts.each do |post|
+    %h1= post.title
+    %h3= post.body,
+    end
 %h3
   Sept. 29th: Taking it to the max, pushing the envelope, and other extreme catch phrases!
   %img{:src => "images/new-york-city.jpg", :style => "float: right; margin: 0px 0px 15px 15px;"}/

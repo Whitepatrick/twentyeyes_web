@@ -135,3 +135,81 @@ Sat, 03 Oct 2015 20:43:57 GMT  ~  info  ~  Logfile created
  ~ (0.000183) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
  ~ (0.000205) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
  ~ (0.000236) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000108) SET backslash_quote = off
+ ~ (0.000100) SET standard_conforming_strings = on
+ ~ (0.000068) SET client_min_messages = warning
+ ~ (0.000070) SET datestyle = ISO
+ ~ (0.000056) SET client_min_messages = warning
+ ~ (0.000051) SET client_min_messages = warning
+ ~ (0.002557) SELECT current_schema()
+ ~ (0.010713) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'posts'
+ ~ (0.000069) RESET client_min_messages
+ ~ (0.000070) SET backslash_quote = off
+ ~ (0.000041) SET standard_conforming_strings = on
+ ~ (0.000043) SET client_min_messages = warning
+ ~ (0.000039) SET datestyle = ISO
+ ~ (0.006119) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'post_id'
+ ~ (0.001050) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'title'
+ ~ (0.001273) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'body'
+ ~ (0.001096) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'created_at'
+ ~ (0.001241) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'updated_at'
+ ~ (0.001153) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'current_or_nah'
+ ~ (0.000092) RESET client_min_messages
+ ~ (0.000125) SET backslash_quote = off
+ ~ (0.000092) SET standard_conforming_strings = on
+ ~ (0.000091) SET client_min_messages = warning
+ ~ (0.000066) SET datestyle = ISO
+ ~ (0.000028) SET client_min_messages = warning
+ ~ (0.000049) SET client_min_messages = warning
+ ~ (0.000132) SELECT current_schema()
+ ~ (0.001474) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'posts'
+ ~ (0.000063) RESET client_min_messages
+ ~ (0.000087) SET backslash_quote = off
+ ~ (0.000127) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000076) SET datestyle = ISO
+ ~ (0.002485) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'post_id'
+ ~ (0.001107) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'title'
+ ~ (0.001022) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'body'
+ ~ (0.000954) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'created_at'
+ ~ (0.000941) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'updated_at'
+ ~ (0.000957) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'current_or_nah'
+ ~ (0.000108) RESET client_min_messages
+ ~ (0.001289) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000281) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000230) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000306) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000263) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000207) SELECT "post_id", "title", "created_at", "updated_at", "current_or_nah" FROM "posts" ORDER BY "post_id"
+ ~ (0.000152) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000105) SET client_min_messages = warning
+ ~ (0.000094) SET datestyle = ISO
+ ~ (0.000027) SET client_min_messages = warning
+ ~ (0.000024) SET client_min_messages = warning
+ ~ (0.000138) SELECT current_schema()
+ ~ (0.001499) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'posts'
+ ~ (0.000072) RESET client_min_messages
+ ~ (0.000094) SET backslash_quote = off
+ ~ (0.000108) SET standard_conforming_strings = on
+ ~ (0.000091) SET client_min_messages = warning
+ ~ (0.000078) SET datestyle = ISO
+ ~ (0.002585) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'post_id'
+ ~ (0.000938) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'title'
+ ~ (0.000912) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'body'
+ ~ (0.000899) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'created_at'
+ ~ (0.000906) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'updated_at'
+ ~ (0.000912) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'current_or_nah'
+ ~ (0.000092) RESET client_min_messages
+ ~ (0.000062) SET client_min_messages = warning
+ ~ (0.000070) SET client_min_messages = warning
+ ~ (0.000087) SELECT current_schema()
+ ~ (0.000495) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'posts'
+ ~ (0.000061) RESET client_min_messages
+ ~ (0.001058) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'post_id'
+ ~ (0.001006) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'title'
+ ~ (0.000966) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'body'
+ ~ (0.000941) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'created_at'
+ ~ (0.000925) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'updated_at'
+ ~ (0.000914) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'posts' AND "column_name" = 'current_or_nah'
+ ~ (0.000058) RESET client_min_messages
