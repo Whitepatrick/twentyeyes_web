@@ -1,4 +1,5 @@
 require './lib/twentyeyes'
+require './lib/globals'
 
 class Post
   DataMapper::Logger.new('api.log', :debug)
