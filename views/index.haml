@@ -1,5 +1,8 @@
-- @posts.each do |post|
+- @posts.take(3).each do |post|
   %h1= post.title
   %small= post.created_at
   %img{:src => post.image_ref}
   %p= post.body
+
+%h3
+  %a{:href => "/posts"} See All Posts

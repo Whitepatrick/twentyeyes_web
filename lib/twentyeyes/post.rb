@@ -1,8 +1,8 @@
 require './lib/twentyeyes'
 
 class Post
-  DataMapper::Logger.new($stdout, :debug)
-  DataMapper.setup(:default, 'postgres://zaphod:albatross@localhost/twentyeyesdb')
+  DataMapper::Logger.new('api.log', :debug)
+  DataMapper.setup(:default, "postgres://#{USERNAME}:#{PASSWORD}@localhost/twentyeyesdb")
 
   include DataMapper::Resource
 

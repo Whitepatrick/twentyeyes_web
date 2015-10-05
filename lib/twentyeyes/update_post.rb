@@ -2,6 +2,48 @@ require './lib/twentyeyes'
 class UpdatePost
   def insert_posts
     @post = Post.create(
+      :title      => "Site Creation",
+      :body       => "Now creating all pages and setting up working links. By the end of tonight (January 24th) I would like to have a bare bones site to accomodate forthcoming content that will document my contiuous deployment project. Very Excited!")
+
+    @post = Post.create(
+      :title      => "Back end work",
+      :body       => "Now working on a feature for the site that will allow the user to create an account, upload an image, and submit a comment with the image. All managed by mongodb, scripted with php. It will be a new git branch to be merged after testing.")
+
+    @post = Post.create(
+      :title      => "MongoDB + PHP",
+      :body       => "After looking over several different login scripts for MongoDB in PHP I finally started developing one of my own to be custom fit to 20eyes.org unique infrastructure. After watching some of the logs while sending some DB traffic to the server I'm VERY excited about what I saw. Will have this problem fixed in the next day or so. Update: Just got a script working that allows user to enter username and pw on main page and script enters that info in to mongodb collection. Next step is write script to authenticate user after information entry",
+      :image_ref => "images/mongophp.png")
+
+    @post = Post.create(
+      :title      => "Good signs from Jenkins:",
+      :body       => "While monitoring all the logs, everything is working except the actual transfer of the files which is probably the most important step in the build process BUT at least all other processes are going off without a hitch. SSH connection is smooth, Jenkins is connecting to GitHub and getting polling accurately. I'm stillnot sure if the scheduler is working as it should but I can sort that detail out after I start getting consistant successful builds.")
+
+    @post = Post.create(
+      :title      => "Jenkins-CI Installation and configuration",
+      :body       => "Put the MongoDB work off for another week (it's actually not supposed to be started until later in the schedule but I was getting antsy to try figuring out the PHP funtions for it). This week I installed <a href='http://jenkins-ci.org/', 'target'='_blank'>Jenkins Continuous Integration</a> and have been working on a Build that will poll my <a href='http://www.github.com/Whitepatrick', 'target'='_blank'>GitHub</a> every 10 minutes and if any changes are made the build is supposed to be published to my production server. However in my experience nothing ever works the first time so I will keep plugging away.",
+      :image_ref => "images/jenkins.png")
+
+    @post = Post.create(
+      :title      => "Hitting some road blocks!",
+      :body       => "I've been ending up stumped on getting Jenkins to actually transfer the files that have been changed after polling GitHub. I am getting everything else right; Build is successfull, SSH connection made, but then 0 files transfer. Output is in the image near this post. I'm considering a different method of deploying as well as wrapping my brain around the transfer set issue in Jenkins. After MUCH googling I see that others have the same issue as me and it could be a configuration issue with the way my project is set up. This isn't a huge problem since there are other tools that can fill its place. Currently looking in to <a href='https://travis-ci.org/', 'target'='_blank'>Travis-CI</a> which seems to be tailor made for GitHub deployment and operates off git hooks. Another issue raised here is that I'm about a week behind schedule. I can try making up the time but next week I need to attempt to stand up <a href='http://puppetlabs.com/', 'target'='_blank'>Puppet</a>.",
+      :image_ref => "images/jenkins-error.jpg")
+
+    @post = Post.create(
+      :title      => "SSH False Positives w/ Jenkins",
+      :body       => "After beating my head against the wall trying to get the SSH transfer job to work in Jenkins for a few weeks, the job is finally completing all steps and builds are stable! The journey from the previous errors I was getting and the first stable job was a long and winding one. The job is using the publish over SSH plugin. The build actively polls my GitHub repository frequently throughout the day. Whenever Jenkins notices a new push that has been made to the repository it triggers the build. Jenkins gathers all files from the repo and builds them in the workspace. After the build the SSH plugin sends all files on the workspace to my production server and then the files are live.",
+      :image_ref => "images/console_success.jpg")
+
+    @post = Post.create(
+      :title      => "PHP + GridFS = The most fun I've had with MongoDB!",
+      :body       => "Started a new branch on my <a href='https://github.com/Whitepatrick/20eyes-web/tree/gridfs-upload', 'target'='_blank'>GitHub</a> repo for this project that will be a photo upload to MongoDB's GridFS using PHP. Had tried this previously but screwed up the branching on my Git repo, so this is the real deal! I won't make this feature live until I link the authentication section I made previously in PHP and MongoDB. Very excited about PHP and MongoDB! Great Success!",
+      :image_ref => "images/gridfs.png")
+
+    @post = Post.create(
+      :title      => "5/29/2014: It's Log!",
+      :body       => "In an effort to better understand the types of traffic I'm getting I have implemented an 'ELK' stack between my two rackspace servers. ELK stands for <a href='http://www.elasticsearch.org', 'target'='_blank'>Elasticsearch</a> <a href='http://logstash.net', 'target'='_blank'>Logstash</a> <a href='http://rashidkpc.github.io/Kibana/', 'target'='_blank'>Kibana</a>. In other news: I graduated from VCU this month. What an amazing experience! I'm very excited to see where the rest of this new chapter in my life takes me. Since graduating I have been exploring a few projects I wasn't able to previously due to time consumption of school projects. Two new things I'm working on (and very excited about) are: <a href='https://github.com/Whitepatrick/freshzings.git', 'target'='_blank'>A Twitter bot written in python</a>. Currently the function is to search for the latest tweet with the hashtag '#zing' and retweet it. Using the Tweepy library, the Python-Twitter library doesn't appeal to me. A session handler writtin in PHP with MongoDB. During the last semester I wrote a session handler in PHP with MySQL and kind of regretted it. I now get the chance to write it using MongoDB which, in my opnion, should be faster and more felxible. <a href='https://github.com/Whitepatrick/session_handler.git', 'target'='_blank'>GitHub repo</a>. Stay tuned for future updates and new projects!",
+      :image_ref => "images/elk.png")
+
+    @post = Post.create(
       :title      => "10/24/2014: QA, Ruby, and Linux: A nerds tale",
       :body       => "Wow! A lot has happened since the last time I updated this. I moved to DC a few months ago after taking a QA job with an aggregation email company. I initially applied for their sys admin job but ended up being talked in to QA. So far it''s been great! I''ve been writing some selenium tests in Java which is ..ok, but I still have some room to write command line tools in Ruby to make some routine tasks a little easier. The highlight so far is getting <a href='http://rundeck.org/', 'target'='_blank'> Rundeck</a> up and running to assist in building and rebuilding the various QA environments. Trying to tackle this one in my down time at work, but I''ve made a fair amount of progress. The only thing I have left to do is assign access policies.",
       :image_ref => "images/rundeck.png")
@@ -49,6 +91,10 @@ class UpdatePost
       :body       => "It's been quite a long time since I've been able to update this page and a lot has happened since! Lianna and I are all moved in and have settled our aparment nicely. Finally getting into the swing of a significantly different commute. I don't miss the 16th bus in DC, but comparitively the commute in DC was far more chill than NYC as NYC has no chill. I've been coding a lot lately and have got a few little pet projects going.First up is <a href='https://github.com/Whitepatrick/20eyesbot', 'target'='_blank'>a twitter bot</a> designed to basically follow anyone who matches a very low set of criteria. This was mostly an excercise to checkout the twitter API and occupy a weekend or two. It has a few unit tests and a functional test as well. I'm still toying with the idea of completely redoing it. Next is *another* bot meant to idle in a channel I sometimes idle in on irc.freenode.net called #gnudism. <a href='https://github.com/Whitepatrick/gnudism_bot', 'target'='_blank'>This bot</a> also doesn't do an incredible lot. It's got an autovoice feature that I'm trying to work into an auto-op feature, but setting up proper authorization is tricky since I want to get auto op'ed no matter where I'm signed in from. One of the bigger undertakings is revamping this site *again* to include <a href='https://github.com/Whitepatrick/twentyeyes_api', 'target'='_blank'>an API with a PostgreSQL backend</a>. Nothing crazy at all, session handling and simple CRUD operations. I've got a few unit tests in there as well.",
       :image_ref  => "images/new-york-city.jpg")
 
+    @post = Post.create(
+      :title      => "Oct 5th: Getting ready to re-re-release this site",
+      :body       => "I've got the sintra pages pulling from a PostgreSQL db using datamapper. I liked the way it creates tables over activerecord, but I miss the db migrations that activerecord came with. Datamapper has a migrations library I think I'll eventually try adding in. I'm pretty happy the way this project is heading and I'm a little proud of myself I've been able to redo this site exactly how I wanted it. I've made a wrong turn here and there but oh well, those wrong turns were fun too! Upcoming work on here will include controlling how posts are displayed and in what frequency. I'm thinking just showing the latest 3 and having the user perform some action to reveal the rest. Also adding back in the search field to the navbar might be nice, but I'm not rushing to fiddle around with that navbar anytime soon.",
+      :image_ref  => "images/reopening.png")
   end
 end
 =begin

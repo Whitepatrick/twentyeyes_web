@@ -3,7 +3,7 @@ require './lib/twentyeyes'
 
 get '/' do
   @posts = Post.all(:order => [ :post_id.desc ])
-  haml :posts
+  haml :index
 end
 
 get '/posts' do

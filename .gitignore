@@ -184,3 +184,4 @@ bower.json
 
 # Ignore IDA crud
 .idea/
+globals.rb
