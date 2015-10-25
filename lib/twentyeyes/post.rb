@@ -1,7 +1,7 @@
 require './lib/globals'
 class Post
-  DataMapper::Logger.new('api.log', :debug)
-  DataMapper.setup(:default, "postgres://patrick:albatross@twentyeyes_pg/twentyeyesdb")
+  DataMapper::Logger.new($stdout, :debug)
+  DataMapper.setup(:default, "postgres://patrick@twentyeyes_pg/twentyeyesdb")
 
   include DataMapper::Resource
 

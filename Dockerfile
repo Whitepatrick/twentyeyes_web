@@ -11,11 +11,10 @@ RUN apt-get install -y ruby ruby-dev
 RUN apt-get install -y curl
 RUN apt-get install -y openssl
 RUN apt-get install -y nginx
+RUN apt-get install -y postgresql-server-dev-9.3
 RUN apt-get install -y zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev
-
 EXPOSE 80
 ENV POSTGRES_USER=patrick
-ENV POSTGRES_PASSWORD=albatross
 RUN gem install bundler
 ENV RACK_ENV=production
 

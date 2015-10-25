@@ -39,3 +39,5 @@ FATAL:  password authentication failed for user "patrick"
 	TCP/IP connections on port 5432?
 FATAL:  password authentication failed for user "patrick"
  (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )
