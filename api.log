@@ -1,0 +1,41 @@
+Sat, 17 Oct 2015 15:03:17 GMT  ~  info  ~  Logfile created
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "'postgres'"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  database "twentyeyesdb" does not exist
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  database "twentyeyesdb" does not exist
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  database "twentyeyesdb" does not exist
+ (code: , sql state: , query: , uri: )
+ ~ could not connect to server: No route to host
+	Is the server running on host "twentyeyes_pg" (172.17.0.14) and accepting
+	TCP/IP connections on port 5432?
+FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )
+ ~ could not connect to server: No route to host
+	Is the server running on host "twentyeyes_pg" (172.17.0.14) and accepting
+	TCP/IP connections on port 5432?
+FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )
+ ~ could not connect to server: No route to host
+	Is the server running on host "twentyeyes_pg" (172.17.0.14) and accepting
+	TCP/IP connections on port 5432?
+FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )
+ ~ could not connect to server: No route to host
+	Is the server running on host "twentyeyes_pg" (172.17.0.14) and accepting
+	TCP/IP connections on port 5432?
+FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )

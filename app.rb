@@ -1,3 +1,4 @@
+#\ -w -p 80
 require 'sinatra'
 require './lib/twentyeyes'
 

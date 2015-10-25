@@ -1,8 +1,7 @@
-require './lib/twentyeyes'
-
+require './lib/globals'
 class Post
   DataMapper::Logger.new('api.log', :debug)
-  DataMapper.setup(:default, "postgres://#{USERNAME}:#{PASSWORD}@localhost/twentyeyesdb")
+  DataMapper.setup(:default, "postgres://patrick:albatross@twentyeyes_pg/twentyeyesdb")
 
   include DataMapper::Resource
 
