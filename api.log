@@ -1,0 +1,19 @@
+Mon, 05 Oct 2015 12:19:51 GMT  ~  info  ~  Logfile created
+ ~ FATAL:  password authentication failed for user "patrick"
+FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )
+ ~ FATAL:  password authentication failed for user "patrick"
+FATAL:  password authentication failed for user "patrick"
+ (code: , sql state: , query: , uri: )
+ ~ fe_sendauth: no password supplied
+ (code: , sql state: , query: , uri: )
+ ~ fe_sendauth: no password supplied
+ (code: , sql state: , query: , uri: )
+ ~ fe_sendauth: no password supplied
+ (code: , sql state: , query: , uri: )
+ ~ fe_sendauth: no password supplied
+ (code: , sql state: , query: , uri: )
+ ~ fe_sendauth: no password supplied
+ (code: , sql state: , query: , uri: )
+ ~ fe_sendauth: no password supplied
+ (code: , sql state: , query: , uri: )
