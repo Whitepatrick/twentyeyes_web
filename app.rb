@@ -1,19 +1,11 @@
-require 'rubygems'
-require 'sinatra'
-require 'haml'
+require "sinatra"
 
-get '/' do
-  haml :posts
+set :bind. "0.0.0.0"
+
+get "/" do
+  "Hello World"
 end
 
-get '/about_me' do
-  haml :about_me
-end
-
-get '/contact' do
-  haml :contact
-end
-
-get '/posts' do
-  haml :posts
+get "/foo" do
+  "Foo!"
 end
